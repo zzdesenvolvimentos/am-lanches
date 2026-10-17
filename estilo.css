@@ -227,7 +227,7 @@ body {
 }
 
 /* =========================================
-   PRODUTOS / CARDÁPIO
+   PRODUTOS / CARDÁPIO POR CATEGORIAS
    ========================================= */
 .secao-produtos {
     padding: 5rem 0;
@@ -253,9 +253,24 @@ body {
     color: var(--text-dark);
 }
 
+.categoria-bloco {
+    margin-bottom: 3.5rem;
+}
+
+.categoria-titulo {
+    font-size: 1.35rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-bottom: 2px solid var(--bg-light);
+    padding-bottom: 0.5rem;
+}
+
 .produtos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
@@ -311,7 +326,7 @@ body {
 }
 
 .produto-info h3 {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: var(--text-dark);
     margin-bottom: 0.5rem;
 }
@@ -345,10 +360,91 @@ body {
 }
 
 /* =========================================
+   SEÇÃO KIT FESTA & CENTOS
+   ========================================= */
+.secao-kit-festa {
+    background-color: var(--bg-light);
+    padding: 5rem 0;
+}
+
+.kit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.kit-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.kit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.kit-card.kit-destaque {
+    border: 2px solid var(--primary);
+    background-color: #fff;
+}
+
+.tag-kit-destaque {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.2rem 0.8rem;
+    border-radius: 50px;
+}
+
+.kit-card h3 {
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    margin-bottom: 0.2rem;
+}
+
+.kit-sub {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
+}
+
+.kit-itens {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.kit-itens li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    margin-bottom: 0.6rem;
+}
+
+.kit-itens li i {
+    color: var(--primary);
+    width: 18px;
+}
+
+/* =========================================
    SOBRE NÓS
    ========================================= */
 .secao-sobre {
-    background-color: var(--bg-light);
+    background-color: var(--bg-white);
     padding: 5rem 0;
 }
 
@@ -381,7 +477,7 @@ body {
 }
 
 .sobre-card-destaque {
-    background: #fff;
+    background: var(--bg-light);
     padding: 2.5rem;
     border-radius: var(--radius-md);
     border: 1px solid var(--border-color);

@@ -17,14 +17,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /**
  * Função para gerar pedido direto no WhatsApp da AM Lanches
- * @param {string} nomeLanche - Nome do produto selecionado
+ * @param {string} nomeLanche - Nome do produto ou kit selecionado
  */
 function pedirLanche(nomeLanche) {
-    // Número do WhatsApp oficial da AM Lanches
+    // Número do WhatsApp oficial da AM Lanches (Maiza)
     const numeroWhatsApp = "556692257917"; 
 
-    // Mensagem pronta para o cliente
-    const mensagem = `Olá Maiza! Gostaria de fazer um pedido de: *${nomeLanche}*. Podia me passar os detalhes de valor e disponibilidade?`;
+    // Mensagem pronta para a Maiza
+    const mensagem = `Olá Maiza! Gostaria de fazer um pedido de: *${nomeLanche}*. Pode me passar os detalhes de valores e disponibilidade?`;
 
     // Abre a conversa no WhatsApp em uma nova aba
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;

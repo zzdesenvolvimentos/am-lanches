@@ -29,6 +29,7 @@
 
             <div class="menu-links" id="menu-links">
                 <a href="#produtos">Cardápio</a>
+                <a href="#kit-festa">Kit Festa</a>
                 <a href="#sobre">Sobre Nós</a>
                 <a href="#contato">Contato</a>
                 <a href="#produtos" class="btn-nav-cta">Fazer Pedido</a>
@@ -44,19 +45,20 @@
                     <i data-lucide="heart" size="16"></i> Feito com carinho e qualidade
                 </span>
                 <h1>AM Lanches</h1>
-                <p>Lanches deliciosos preparados com ingredientes frescos e aquele toque caseiro inesquecível que faz toda a diferença!</p>
+                <p>Lanches deliciosos, pastéis crocantes, esfirras assadas e centos de salgados preparados com aquele toque caseiro inesquecível!</p>
                 <div class="hero-btns">
                     <a href="#produtos" class="btn btn-primary">
                         <i data-lucide="utensils"></i> Ver Cardápio
                     </a>
-                    <a href="#contato" class="btn btn-outline">
-                        <i data-lucide="map-pin"></i> Como Chegar
+                    <a href="#kit-festa" class="btn btn-outline">
+                        <i data-lucide="party-popper"></i> Kit Festa & Centos
                     </a>
                 </div>
             </div>
             
             <div class="hero-image-wrapper">
-                <img src="imagens/Rosca-Hungura.jpg" alt="Rosca Húngara AM Lanches" class="hero-img" onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80'">
+                <!-- FOTO DA CAPA: substitua o caminho abaixo pela sua imagem -->
+                <img src="imagens/Rosca-Hungura.jpg" alt="AM Lanches Vitrine" class="hero-img" onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80'">
                 <div class="badge-flutuante">
                     <i data-lucide="sparkles"></i>
                     <span>Receitas Caseiras</span>
@@ -73,63 +75,252 @@
                 <h2 class="titulo-secao">Feitos na Hora para Você</h2>
             </div>
 
-            <div class="produtos-grid">
-                <!-- Produto 1 -->
-                <div class="produto-card">
-                    <div class="img-box">
-                        <img src="imagens/Rosca-Hungura.jpg" alt="Rosca Húngara" onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80'">
-                        <span class="tag-categoria">Especialidade</span>
+            <!-- CATEGORIA 1: Risoles -->
+            <div class="categoria-bloco">
+                <h3 class="categoria-titulo">
+                    <i data-lucide="flame"></i> Risoles de Massa (Fritos na Hora)
+                </h3>
+                <div class="produtos-grid">
+                    
+                    <!-- Produto:Risole de Frango -->
+                    <div class="produto-card">
+                        <div class="img-box">
+                            <!-- FOTO DO PRODUTO -->
+                            <img src="imagens/Risole-frango.jpg" alt="Risole de Frango" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_edY_cNb2FcZDGCpzne2gSmnEONKvO1JqIUyBNheeoEJ6j5lh3zdEN98&s=10'">
+                            <span class="tag-categoria">Risole de Massa</span>
+                        </div>
+                        <div class="produto-info">
+                            <h3>Risole de Frango</h3>
+                            <p>Massa crocante artesanal recheada com frango desfiado temperado e requeijão cremoso.</p>
+                            <button class="btn-pedir" onclick="pedirLanche('Risole de Frango')">
+                                <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
+                            </button>
+                        </div>
                     </div>
-                    <div class="produto-info">
-                        <h3>Rosca Húngara</h3>
-                        <p>Massa fofinha artesanal, recheada e coberta com calda cremosa e coco ralado.</p>
-                        <button class="btn-pedir" onclick="pedirLanche('Rosca Húngara')">
-                            <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
-                        </button>
+
+                    <!-- Produto: Risole Queijo e Presunto -->
+                    <div class="produto-card">
+                        <div class="img-box">
+                            <!-- FOTO DO PRODUTO -->
+                            <img src="imagens/Risole-queijo-presunto.jpg" alt="Risole de Queijo e Presunto" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP5Qn4Uuev12zq7-xxuleACr0SijRjTy-CCAKczyUJ0lqSZdVThWEAq_7U&s=10'">
+                            <span class="tag-categoria">Risole</span>
+                        </div>
+                        <div class="produto-info">
+                            <h3>Risole de Queijo & Presunto</h3>
+                            <p>Combinação clássica de queijo derretido, presunto e um toque de orégano em massa dourada.</p>
+                            <button class="btn-pedir" onclick="pedirLanche('Risole de Queijo e Presunto')">
+                                <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
+                            </button>
+                        </div>
                     </div>
+
+                    <!-- Produto: Risole Carne Moída com Queijo -->
+                    <div class="produto-card">
+                        <div class="img-box">
+                            <!-- FOTO DO PRODUTO -->
+                            <img src="imagens/Risole-carne-queijo.jpg" alt="Risole de Carne Moída com Queijo" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEmkU0dDmcRwOj40PkkK5OvqgTLczdOHBEqF5hIzoUiKVFSNZZOm0_gfAI&s=10'">
+                            <span class="tag-categoria">Risole</span>
+                        </div>
+                        <div class="produto-info">
+                            <h3>Risole de Carne c/ Queijo</h3>
+                            <p>Carne moída bem temperada e suculenta, coberta com camada generosa de queijo derretido.</p>
+                            <button class="btn-pedir" onclick="pedirLanche('Risole de Carne Moída com Queijo')">
+                                <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CATEGORIA 2: SALGADOS, ESFIRRAS & MINI PIZZAS -->
+            <div class="categoria-bloco">
+                <h3 class="categoria-titulo">
+                    <i data-lucide="utensils-crossed"></i> Salgados, Esfihas & Mini Pizzas
+                </h3>
+                <div class="produtos-grid">
+
+                    <!-- Produto: Bolinhas de Queijo -->
+                    <div class="produto-card">
+                        <div class="img-box">
+                            <!-- FOTO DO PRODUTO -->
+                            <img src="imagens/bolinha-queijo.jpg" alt="Bolinhas de Queijo" onerror="this.src='https://www.receitasnestle.com.br/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/59d98aa4cf9c37c2addf2f39876b5bc4.jpeg?itok=4gbWjOAd'">
+                            <span class="tag-categoria">Crocante</span>
+                        </div>
+                        <div class="produto-info">
+                            <h3>Bolinhas de Queijo</h3>
+                            <p>Massa leve e empanada por fora, recheada com queijo que derrete a cada mordida.</p>
+                            <button class="btn-pedir" onclick="pedirLanche('Bolinhas de Queijo')">
+                                <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Produto: Esfihas Triangulares -->
+                    <div class="produto-card">
+                        <div class="img-box">
+                            <!-- FOTO DO PRODUTO -->
+                            <img src="imagens/esfirra-triangular.jpg" alt="Esfirras Triangulares" onerror="this.src='https://s2-globorural.glbimg.com/Dol96-53T84AXuMr9oN3YPBaI5Q=/0x0:1500x960/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_afe5c125c3bb42f0b5ae633b58923923/internal_photos/bs/2023/I/U/fR6CnESMGkVyckDdLAdA/design-sem-nome-6-.png'">
+                            <span class="tag-categoria">Assado</span>
+                        </div>
+                        <div class="produto-info">
+                            <h3>Esfihas Triangulares</h3>
+                            <p>Massa assada macia no formato tradicional triangular. Recheios de carne ou frango.</p>
+                            <button class="btn-pedir" onclick="pedirLanche('Esfihas Triangulares')">
+                                <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Produto: Mini Pizzas -->
+                    <div class="produto-card">
+                        <div class="img-box">
+                            <!-- FOTO DO PRODUTO -->
+                            <img src="imagens/mini-pizza.jpg" alt="Mini Pizzas" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn59WGc4OZ6ArxMiMxe-Xk14uIP2oHziEdwe_2xOCiJJJdRt59W4fBKXk&s=10'">
+                            <span class="tag-categoria">Sucesso</span>
+                        </div>
+                        <div class="produto-info">
+                            <h3>Mini Pizzas</h3>
+                            <p>Base de massa artesanal com molho caseiro, muçarela, calabresa e orégano.</p>
+                            <button class="btn-pedir" onclick="pedirLanche('Mini Pizzas')">
+                                <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CATEGORIA 3: ROSCAS E ESPECIALIDADES -->
+            <div class="categoria-bloco">
+                <h3 class="categoria-titulo">
+                    <i data-lucide="heart"></i> Roscas & Salgados da Casa
+                </h3>
+                <div class="produtos-grid">
+                    
+                    <!-- Produto: Rosca Húngara -->
+                    <div class="produto-card">
+                        <div class="img-box">
+                            <!-- FOTO DO PRODUTO -->
+                            <img src="imagens/Rosca-Hungura.jpg" alt="Rosca Húngara" onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80'">
+                            <span class="tag-categoria">Especialidade</span>
+                        </div>
+                        <div class="produto-info">
+                            <h3>Rosca Húngara</h3>
+                            <p>Massa fofinha artesanal, recheada e coberta com calda cremosa e coco ralado.</p>
+                            <button class="btn-pedir" onclick="pedirLanche('Rosca Húngara')">
+                                <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Produto: Enroladinho de Queijo -->
+                    <div class="produto-card">
+                        <div class="img-box">
+                            <!-- FOTO DO PRODUTO -->
+                            <img src="imagens/enroladinho-queijo.jpg" alt="Enroladinho de Queijo" onerror="this.src='https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="produto-info">
+                            <h3>Enroladinho de Queijo</h3>
+                            <p>Massa leve e dourada com recheio generoso de queijo derretido e suculento.</p>
+                            <button class="btn-pedir" onclick="pedirLanche('Enroladinho de Queijo')">
+                                <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Produto: Enroladinho de Salsicha -->
+                    <div class="produto-card">
+                        <div class="img-box">
+                            <!-- FOTO DO PRODUTO -->
+                            <img src="imagens/enroladinho-salsicha.jpg" alt="Enroladinho de Salsicha" onerror="this.src='https://amopaocaseiro.com.br/wp-content/uploads/2022/01/yt-054_enroladinho-de-salsicha_receita.jpg'">
+                        </div>
+                        <div class="produto-info">
+                            <h3>Enroladinho de Salsicha</h3>
+                            <p>Salgado assado macio, perfeitamente temperado para o lanche da tarde.</p>
+                            <button class="btn-pedir" onclick="pedirLanche('Enroladinho de Salsicha')">
+                                <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Produto: Cigarrete Especial -->
+                    <div class="produto-card">
+                        <div class="img-box">
+                            <!-- FOTO DO PRODUTO -->
+                            <img src="imagens/cigarrete.jpg" alt="Cigarrete de Presunto e Queijo" onerror="this.src='https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="produto-info">
+                            <h3>Cigarrete Especial</h3>
+                            <p>Crocante por fora e mega recheada com presunto e queijo derretido por dentro.</p>
+                            <button class="btn-pedir" onclick="pedirLanche('Cigarrete Especial')">
+                                <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEÇÃO KIT FESTA & CENTOS DE SALGADOS -->
+    <section id="kit-festa" class="secao-kit-festa">
+        <div class="container">
+            <div class="cabecalho-secao">
+                <span class="subtitulo-secao">Para seu Evento</span>
+                <h2 class="titulo-secao">Kits Festa & Centos de Salgados</h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0.5rem auto 0 auto;">Encomende centos de salgados e kits completos para festas, aniversários e reuniões.</p>
+            </div>
+
+            <div class="kit-grid">
+                
+                <!-- Kit 1 -->
+                <div class="kit-card">
+                    <h3>Cento de Salgados Fritos</h3>
+                    <p class="kit-sub">Ideal para 5 a 8 pessoas</p>
+                    <ul class="kit-itens">
+                        <li><i data-lucide="check"></i> 30 Bolinhas de Queijo</li>
+                        <li><i data-lucide="check"></i> 30 Coxinhas de Frango</li>
+                        <li><i data-lucide="check"></i> 20 Enroladinhos</li>
+                        <li><i data-lucide="check"></i> 20 Risóis Misto</li>
+                    </ul>
+                    <button class="btn-pedir" onclick="pedirLanche('Cento de Salgados Fritos')">
+                        <i data-lucide="message-circle"></i> Cotar no WhatsApp
+                    </button>
                 </div>
 
-                <!-- Produto 2 -->
-                <div class="produto-card">
-                    <div class="img-box">
-                        <img src="imagens/enroladinho-queijo.jpg" alt="Enroladinho de Queijo" onerror="this.src='https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80'">
-                    </div>
-                    <div class="produto-info">
-                        <h3>Enroladinho de Queijo</h3>
-                        <p>Massa leve e dourada com recheio generoso de queijo derretido e suculento.</p>
-                        <button class="btn-pedir" onclick="pedirLanche('Enroladinho de Queijo')">
-                            <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
-                        </button>
-                    </div>
+                <!-- Kit 2 (Destaque) -->
+                <div class="kit-card kit-destaque">
+                    <span class="tag-kit-destaque">Mais Pedido</span>
+                    <h3>Kit Festa Completo</h3>
+                    <p class="kit-sub">Para eventos de até 15 pessoas</p>
+                    <ul class="kit-itens">
+                        <li><i data-lucide="check"></i> 100 Salgados Fritos Variados</li>
+                        <li><i data-lucide="check"></i> 20 Mini Esfirras Triangulares</li>
+                        <li><i data-lucide="check-circle-2"></i> 15 Mini Pizzas Crocantes</li>
+                        <li><i data-lucide="check"></i> Embalagem especial para transporte</li>
+                    </ul>
+                    <button class="btn-pedir" onclick="pedirLanche('Kit Festa Completo')">
+                        <i data-lucide="message-circle"></i> Cotar no WhatsApp
+                    </button>
                 </div>
 
-                <!-- Produto 3 -->
-                <div class="produto-card">
-                    <div class="img-box">
-                        <img src="imagens/enroladinho-salsicha.jpg" alt="Enroladinho de Salsicha" onerror="this.src='https://amopaocaseiro.com.br/wp-content/uploads/2022/01/yt-054_enroladinho-de-salsicha_receita.jpg'">
-                    </div>
-                    <div class="produto-info">
-                        <h3>Enroladinho de Salsicha</h3>
-                        <p>Salgado assado macio, perfeitamente temperado para o lanche da tarde.</p>
-                        <button class="btn-pedir" onclick="pedirLanche('Enroladinho de Salsicha')">
-                            <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
-                        </button>
-                    </div>
+                <!-- Kit 3 -->
+                <div class="kit-card">
+                    <h3>Kit Degustação Mini</h3>
+                    <p class="kit-sub">Perfeito para reuniões em família</p>
+                    <ul class="kit-itens">
+                        <li><i data-lucide="check"></i> 50 Salgados Fritos Variados</li>
+                        <li><i data-lucide="check"></i> 10 Mini Pizzas</li>
+                        <li><i data-lucide="check"></i> 6 Pastéis de Massa à sua escolha</li>
+                    </ul>
+                    <button class="btn-pedir" onclick="pedirLanche('Kit Degustação Mini')">
+                        <i data-lucide="message-circle"></i> Cotar no WhatsApp
+                    </button>
                 </div>
 
-                <!-- Produto 4 -->
-                <div class="produto-card">
-                    <div class="img-box">
-                        <img src="imagens/cigarrete.jpg" alt="Cigarrete de Presunto e Queijo" onerror="this.src='https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80'">
-                    </div>
-                    <div class="produto-info">
-                        <h3>Cigarrete Especial</h3>
-                        <p>Crocante por fora e mega recheada com presunto e queijo derretido por dentro.</p>
-                        <button class="btn-pedir" onclick="pedirLanche('Cigarrete Especial')">
-                            <i data-lucide="shopping-bag"></i> Pedir no WhatsApp
-                        </button>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
