@@ -16,18 +16,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /**
- * Função para gerar pedido direto no WhatsApp da [Nome da Sua Lanchonete]
+ * Função para gerar pedido direto no WhatsApp da AM Lanches
  * @param {string} nomeLanche Nome do produto ou kit selecionado
  */
 function pedirLanche(nomeLanche) {
     // Número do WhatsApp oficial (Lembre-se de colocar o código do país '55' + DDD + Número)
     // Exemplo: "5511999999999"
-    const numeroWhatsApp = "[SeuNumeroDeTelefoneSemEspacos]"; 
+    const numeroWhatsApp = "[5566992257917]"; 
 
     // Mensagem pronta para o lojista
     const mensagem = `Olá [Seu Nome]! Gostaria de fazer um pedido de: *${nomeLanche}*. Pode me passar os detalhes de valores e disponibilidade?`;
 
     // Abre a conversa no WhatsApp em uma nova aba
-    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+    const url = `https://wa.me/${5566992257917}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, "_blank");
 }
